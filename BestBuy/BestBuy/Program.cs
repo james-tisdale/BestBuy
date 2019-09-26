@@ -6,7 +6,13 @@ namespace BestBuy
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var productA = new Product();
+            productA.Price = 66.60;
+            productA.Name = "Pitchfork";
+
+            Console.WriteLine($"Product Name: {productA.Name} " +
+                $"\nProduct Price: ${productA.Price} " +
+                $"\nPrice w/ Tax: {productA.PriceWithTax()}" );
         }
     }
 }
